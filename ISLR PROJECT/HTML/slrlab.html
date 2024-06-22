@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLR LEB</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='CSS/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='CSS/slrlab.css') }}">
+</head>
+<body>
+    <div id="particles-js">
+
+    </div>
+    <div class="navbar">
+        <img src= "{{ url_for('static',filename='IMAGES/logo.png') }}" alt="Error" height="40px">
+        <span>I.S.L.R</span>
+        <ul>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('slr_lab') }}">SLR LAB</a></li>
+            <li><a href="{{ url_for('help_section') }}">HELP CENTER</a></li>
+            <li><a href="{{ url_for('technology') }}">TECHNOLOGY</a></li>
+        </ul>
+    </div>
+
+
+        
+    <div class="slr_container-1">
+        <h1>SLR LAB</h1>
+        
+        <h4>SLRLab is the solutions for instant access to sign language translation.You can easily convert your sign language into english laguage and also you can also hear Audio of that.</h4>
+        <a href="#slr_leb_output_container" id="btn2">Learn More</a>
+    </div>
+
+
+    <div class="slr_cont-2">
+        <div class="text">
+            <h4>
+                Cameras are used to capture, analyze, and translate the core elements of sign language
+            </h4>
+        </div>
+    </div>
+    
+    <div class="slr_leb_container_2">
+        <button id="btn_open_close">OPEN CAMERA</button>
+        <div id="video_camera_container">
+            <progress id="progressBar" max="100" value="0"></progress>
+            <img id="img_or_frames" src="{{ url_for('static', filename='IMAGES/slr_lab_blur_img.png')}}" height="100%" width="100%">
+            <img id="no_video_icon" class="no_vid" src="{{ url_for('static', filename='IMAGES/no-video.png')}}"  alt="" height="64px">
+        </div>
+    </div>
+    <div id="slr_leb_output_container">
+        <h1>Pridicted Charactor: <span id="viewPridiction"></span></h1>
+        <!-- <h1>Text: <span id="outputText"></span></h1> -->
+
+        <h1>Text: </h1>
+        <textarea id="outputText" cols="45" rows="8"></textarea>
+        <h1 id="audio">Audio:  <img id="speak_btn" src="{{ url_for('static', filename='IMAGES/slr_lab_audio_icon.png')}}" alt="error" height="40px"></h1>
+        <button id="btn_clear">CLEAR</button>
+        <button id="btn_download" class="donwload_btn" disabled>DOWNLOAD</button>
+    </div>
+
+    <footer class="footer-style" >
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        
+    
+        <div id="footer-style-container">
+            <div id="footer-style-contect-us">
+                <h3>CONTECT US</h3>
+                <h4>if you have any query related to this website then mail us on</h4>
+                <img src="{{ url_for('static' , filename='IMAGES/gmail.png')}}" alt="error" height="20px">
+                <a href="#">
+                    project206090@gmail.com
+                </a>
+            </div>
+    
+            <div id="footer-style-menu">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('slr_lab') }}">SLR LEB</a></li>
+                    <li><a href="{{ url_for('help_section') }}">Help section</a></li>
+                    <li><a href="{{ url_for('technology') }}">Technology</a></li>
+                </ul>
+            </div>
+    
+            <div id="footer-style-follow-us">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><img src="{{ url_for('static', filename='IMAGES/github_logo.png') }}" alt="error" height="25px"><a href="#">github</a></li>
+                    <li><img src="{{ url_for('static', filename='IMAGES/linked_in_logo.png') }}" alt="error" height="25px"><a href="#">linked in</a></li>
+                    <li><img src="{{ url_for('static', filename='IMAGES/twitter_logo.png') }}" alt="error" height="25px"><a href="#">twitter</a></li>
+                    <li><img src="{{ url_for('static', filename='IMAGES/facebook_logo.png') }}" alt="error" height="25px"><a href="#">facebook</a></li>
+                </ul>
+            </div>
+    
+        </div>
+        <div id="footer-style-address">
+            <p>c.u.shah polytechnic surendranagar, wadhwan, gujarat, india</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='JS/particles.js')}}"  ></script>
+    <script type="text/javascript" src= "{{ url_for('static', filename='JS/app.js')}}"></script>
+    <script src="{{ url_for('static', filename='JS/btn_logic.js') }}"></script>
+</body>
+</html>
+    

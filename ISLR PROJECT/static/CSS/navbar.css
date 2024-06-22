@@ -1,0 +1,65 @@
+/* NAVBAR ........................ */
+
+.navbar
+{
+    margin-top: 1.1%;
+    padding-right: 0%;
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 75px;
+    color: #fff;
+}
+
+.navbar img
+{
+    position: relative;
+    float: left;    
+    padding: 14px 2px;
+    padding-left: 10px;
+}
+
+.navbar span
+{
+    position: relative;
+    padding: 21px 2px;
+    font-size: 23px;
+    font-weight: 600;
+    float: left;
+}
+
+.navbar ul
+{
+    position: relative;
+    padding-top: 14px;
+    padding-right: 50px;
+    float: right;
+    list-style-type: none;
+
+}
+
+.navbar ul li
+{
+    position: relative;
+    float: left;
+    padding-right: 40px;
+}
+
+.navbar ul li a
+{
+    font-size: 14px;
+    position: relative;
+    font-weight: 600;
+    text-decoration: none; 
+    color: inherit;
+    border: 2px solid #000;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+ 
+ .navbar ul li a:hover
+{
+    position: relative;
+    color: #FEE715FF;
+    font-weight: 600;
+} 
