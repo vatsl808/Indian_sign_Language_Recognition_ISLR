@@ -1,0 +1,8 @@
+flask
+mediapipe
+gtts
+h5py
+matplotlib
+numpy
+opencv-python
+tensorflow

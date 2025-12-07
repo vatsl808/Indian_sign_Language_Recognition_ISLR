@@ -4,7 +4,7 @@ import cv2
 import math
 import tensorflow as tf
 
-model = tf.keras.models.load_model("Model\islr_model_latest.h5")
+model = tf.keras.models.load_model("./Model/islr_model_latest.h5")
 model.compile(optimizer=tf.optimizers.Adam(),
               loss=tf.losses.CategoricalCrossentropy(), metrics=['accuracy'])
 labels = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",

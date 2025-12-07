@@ -5,12 +5,12 @@ import math
 import io
 import ssl
 from gtts import gTTS
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from flask import Flask, render_template, Response, request, redirect, stream_with_context, jsonify, url_for, send_file
 app = Flask(__name__, template_folder='HTML')
 
 
-model = load_model("Model\islr_model.h5")
+model = load_model("./Model/islr_model_latest.h5")
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 labels = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", " "]
 
